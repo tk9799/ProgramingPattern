@@ -5,7 +5,7 @@ public static class UIUtility
 {
     /// <summary>
     /// 3桁ごとに「,」を挿入した文字列を生成する
-    /// staticがあることでクラス名と変数を入れると呼び出すことができる
+    /// staticがあることでクラス名と変数を入れる（アクセス）と呼び出すことができる
     /// MonoBehaviourが継承されていないためstaticがないとエラーが出る
     /// staticは最初からある物だがstaticにアクセスしたときに生成される(最初は厳密には無い)
     /// </summary>
