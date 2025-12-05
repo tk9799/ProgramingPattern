@@ -4,6 +4,7 @@ using UnityEngine;
 /// <summary>
 /// 汎用オブジェクトプール
 /// "T"はテンプレートのT
+/// テンプレートはクラスの指定ができる
 /// 制限を付けている
 /// ComponentはInspector内にあるTransformやRigidBodyなどのGameObjectの部品のことを表す
 /// Component内にある部品を継承する
