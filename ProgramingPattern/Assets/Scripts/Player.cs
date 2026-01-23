@@ -18,6 +18,7 @@ public interface IDamage
 public class Player : MonoBehaviour
 {
     //ダメージメソッド呼び出し用オブザーバー
+    //メソッドだけアクセスできるようにListの中にインターフェースを入れる
     private List<IDamage> damageObserver = new List<IDamage>();
 
     //プレイヤーHp
