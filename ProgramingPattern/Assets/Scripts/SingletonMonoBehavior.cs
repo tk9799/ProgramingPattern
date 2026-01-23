@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 
+//Instanceを持っていなくても保持できる
+//1つしか存在しないもの
 /// <summary>
 /// MonoBehaviourをテンプレートで指定しないと継承できない
 /// </summary>
@@ -41,6 +43,8 @@ public class SingletonMonoBehavior<T> : MonoBehaviour where T : MonoBehaviour
         }
     }
 
+    //シングルトンで継承するとAwakeを使えない
+    //virtualを使うとAwakeを使える（親切心）
     /// <summary>
     /// 親クラスの仮想メソッド
     /// 継承できるメソッド
@@ -63,7 +67,7 @@ public class SingletonMonoBehavior<T> : MonoBehaviour where T : MonoBehaviour
         if (instance == null)
         {
             //キャストのasを使用
-            //asは作った型を別の型で扱うときに使う
+            //asは作った型を別の型で扱うときに使い、失敗するとnullになる（他の場合は止まる）
             //instanceをテンプレートに変えてtrueにして返す
             //thisは自分のインスタンス先のことを指している
             //クラス依存の場合にthisがよくつかわれる
