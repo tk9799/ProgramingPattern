@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 
+//Instanceを持っていなくても保持できる
+//1つしか存在しないもの
 /// <summary>
 /// MonoBehaviourをテンプレートで指定しないと継承できない
 /// </summary>
